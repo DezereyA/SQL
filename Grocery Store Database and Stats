@@ -1,0 +1,19 @@
+--Create a grocery store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, cost INTEGER, quantity INTEGER, location TEXT);
+
+INSERT INTO store VALUES(1, "Skirt", 15, 10, "Women's");
+INSERT INTO store VALUES(2, "Booties", 20, 5, "Shoes");
+INSERT INTO store VALUES(3, "Hats", 10, 12, "Accessories");
+INSERT INTO store VALUES(4, "Socks", 5, 14, "Accessories");
+INSERT INTO store VALUES(5, "Flip Flops", 7, 10, "Shoes");
+
+
+--display the database ordered by price
+
+SELECT * FROM store ORDER BY cost asc;
+
+--what is the average price of items in the store?
+
+SELECT AVG(cost) FROM store;
+
